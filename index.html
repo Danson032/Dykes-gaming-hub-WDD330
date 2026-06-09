@@ -3,7 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Dykes Gaming Hub - Discover New Games and Deals</title>
+
+    <meta
+      name="description"
+      content="Dykes Gaming Hub helps gamers discover trending games, upcoming releases, ratings, screenshots, and the latest gaming deals."
+    />
+    <meta name="author" content="Danson Nganga" />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta property="og:title" content="Dykes Gaming Hub" />
+    <meta
+      property="og:description"
+      content="Discover trending games, upcoming releases, and gaming deals all in one place."
+    />
+    <meta property="og:image" content="images/preview.jpg" />
+    <meta
+      property="og:url"
+      content="https://yourgithubusername.github.io/dykes-gaming-hub/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script type="module" src="scripts/main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Dykes Gaming Hub</h1>
+      <button id="menuBtn" aria-label="Open navigation menu">
+        <span id="menuIcon">☰</span>
+      </button>
+    </header>
+    <nav aria-label="Main navigation">
+      <ul id="navList">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="search-section">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for a game..."
+        />
+
+        <button id="searchBtn">Search</button>
+      </section>
+
+      <section>
+        <h2>Trending Games</h2>
+
+        <div id="gamesContainer" class="games-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Dykes Gaming Hub</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
